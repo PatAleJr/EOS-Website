@@ -3,12 +3,10 @@
     box-sizing: border-box;
 
     --headerColor: rgb(43, 50, 73);
-    --headerTextColor: aliceblue;
-
     --backgroundColor: rgb(177, 191, 218);
-
     --footerColor: rgb(43, 50, 73);
-    --footerTextColor: aliceblue;
+
+    --lightTextColor: aliceblue;
 
     font-family: 'Comfortaa', cursive;
 }
@@ -16,24 +14,16 @@
 
 header{
     width:100%;
-    height:250px;
-    
-    display:flex;
-    flex-direction: column;
 
-    background: var(--headerColor);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
 
     text-align: center;
-    justify-content: center;
-    align-items: center;
-
-    color:var(--headerTextColor);
+    background: var(--headerColor);
+    color:var(--lightTextColor);
     font-size: 2em;
     font-weight: bold;
-}
-
-header > h1{
-    margin:40px;
 }
 
 main{
@@ -73,26 +63,25 @@ main{
     text-align: center;
     flex:1;
 }
-.AboutSubdivision > h3{
+.AboutSubdivision h3{
     margin:20px;
 }
-.AboutSubdivision > p{
+.AboutSubdivision p{
     line-height: 1.5em;
 }
 
 footer{
-
-    width:100%;
-    height:200px;
-
-    display:flex;
-    flex-direction: column;
     padding: 20px;
-    
+    padding-bottom: 30px;
+
     background: var(--footerColor);
-    color: var(--footerTextColor);
+    color:var(--lightTextColor);
 }
 
-footer > p{
+footer a, footer h3, footer p {
+    color:var(--lightTextColor);
     margin:10px;
+}
+footer a:hover{
+    text-decoration: none;
 }

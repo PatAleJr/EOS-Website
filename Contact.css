@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    
+    --headerColor: rgb(43, 50, 73);
+    --textColor: aliceblue;
+    --backgroundColor: rgb(177, 191, 218);
+    --footerColor: rgb(43, 50, 73);
+
+    box-sizing: border-box;
+
+    font-family: 'Comfortaa', cursive;
+}
+
+header{
+    height: 20vh;
+    width: 100%;
+
+    background: var(--headerColor);
+    color: var(--textColor);
+    
+    font-size: 2.5rem;
+
+    display:flex;
+    position: relative;
+
+    text-align: center;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.main{
+    width:100%;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+
+    background:var(--backgroundColor);
+}
+
+footer{
+    padding: 20px;
+    padding-bottom: 30px;
+
+    background: var(--footerColor);
+    color:var(--textColor);
+}
+
+footer a, footer h3, footer p {
+    color:var(--lightTextColor);
+    margin:10px;
+}
+footer a:hover{
+    text-decoration: none;
+}
+
+input, textarea, label, button {
+    display:block;
+    margin:10px;
+    resize: none;
+    font-size: 0.8rem;
+}
+
+label, button{
+    width:100px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cancelButton{
+    text-decoration: none;
+}
